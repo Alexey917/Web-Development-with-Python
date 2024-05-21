@@ -1,0 +1,11 @@
+{% extends "entrance/base.html" %}
+
+{% block title %}Регистрация{% endblock title %}
+
+{% block results %}
+    <ul class="list-data">
+        {% for key, value in user.items %}
+            <li><span class="list-item-data">{{ key }} : {{ value }}</span></li>
+        {% endfor %}
+    </ul>
+{% endblock results %}

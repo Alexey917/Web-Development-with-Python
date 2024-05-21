@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.list-data {
+    list-style: none;
+    border: 2px solid blue;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.list-item-data {
+    color: blue;
+    font-weight: 600;
+
+}

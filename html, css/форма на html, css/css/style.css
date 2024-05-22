@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebecf0;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-title {
+  padding: 32px 0;
+  text-align: center;
+  color: #babecc;
+  text-shadow: 1px 1px 0 #babecc;
+}
+
+.form-input-group {
+  margin-bottom: 25px;
+}
+
+.input,
+.button {
+  width: 300px;
+  border: none;
+  outline: none;
+  padding: 18px;
+  border-radius: 512px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #ffffff;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #ffffff;
+}
+
+.select {
+  width: 300px;
+  border: none;
+  outline: none;
+  padding: 18px;
+  border-radius: 512px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #ffffff;
+  box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  color: #525255;
+}
+
+.select-group {
+  position: relative;
+}
+
+.select-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.checkbox-title {
+  padding: 32px 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #babecc;
+  text-shadow: 1px 1px 0 #babecc;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.checkbox-input-group {
+  position: relative;
+  width: 86px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff;
+}
+
+.checkbox-input-group:after {
+  position: absolute;
+  content: "";
+  top: 14.5px;
+  left: 14.5px;
+  height: 2px;
+  width: 56px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff;
+}
+
+.checkbox-input {
+  visibility: hidden;
+}
+
+.checkbox-label {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom, #ffffff 0%, #e8ebee 40%, #d0d2da 100%);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.checkbox-label::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 8.5px;
+  left: 8.5px;
+  background-color: #ae1100;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.6),
+    -5px -5px 10px rgba(255, 255, 255, 0.8);
+}
+
+.checkbox-input:checked + .checkbox-label {
+  left: 56px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #9c9da1;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #ae1100;
+  font-weight: 700;
+  box-shadow: -5px -5px 20px #ffffff, 5px 5px 20px #babecc;
+}
+
+.button:hover {
+  box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #babecc;
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: inset 1px 1px 2px #ffffff, inset -1px -1px 2px #babecc;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Форма</title>
+  </head>
+
+  <body>
+    <form action="#" class="form">
+      <div class="form-title">
+        <h1 class="sign-up">Sign-up</h1>
+      </div>
+
+      <div class="form-input-group">
+        <label class="name-label" for="name">
+          <input
+            class="input"
+            type="text"
+            id="name"
+            placeholder="Name"
+            required
+          />
+        </label>
+      </div>
+
+      <div class="form-input-group">
+        <label class="email-label" for="email">
+          <input
+            class="input"
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </label>
+      </div>
+      <div class="form-input-group">
+        <label class="password-label" for="password">
+          <input
+            class="input"
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </label>
+      </div>
+
+      <div class="select-group">
+        <select class="select">
+          <option value="Select country">Select country</option>
+          <option value="USA">USA</option>
+          <option value="Russia">Russia</option>
+          <option value="Canada">Canada</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Germany">Germany</option>
+        </select>
+        <svg class="select-icon" width="17" height="17">
+          <use href="img/sprite.svg#select"></use>
+        </svg>
+      </div>
+
+      <h2 class="checkbox-title">select gender</h2>
+      <div class="checkbox-group">
+        <span class="text">male</span>
+        <div class="checkbox-input-group">
+          <input class="checkbox-input" type="checkbox" id="checkbox" />
+          <label class="checkbox-label" for="checkbox"></label>
+        </div>
+        <span class="text">female</span>
+      </div>
+
+      <button class="button" type="submit">
+        <svg class="lock-icon" width="17" height="17">
+          <use href="img/sprite.svg#lock"></use>
+        </svg>
+        <span class="button-text">Log In</span>
+      </button>
+    </form>
+  </body>
+</html>
